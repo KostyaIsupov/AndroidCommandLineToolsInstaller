@@ -16,7 +16,7 @@ Firstly, what is path? Path is an enviroment variable that contains a list of fo
 3.2. Go here:<br>
 <img src="https://github.com/KostyaIsupov/AndroidCommandLineToolsInstaller/blob/main/Photos/image3.png?raw=true">
 <br>
-3.3. Select "Add"<br>
+3.3. Doubleclick "Path" in system enviroments.<br>
 3.4. Type "C:\platform-tools".
 
 Thank you for using ACLTI!
