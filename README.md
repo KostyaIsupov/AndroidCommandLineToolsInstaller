@@ -15,3 +15,5 @@ Firstly, what is path? Path is an enviroment variable that contains a list of fo
 3.1. Search Enviroment Variables in Start menu.
 3.2. Go here:
 <img src="https://github.com/KostyaIsupov/AndroidCommandLineToolsInstaller/blob/main/Photos/image3.png?raw=true">
+3.3. Select "Add"
+3.4. Type "C:\platform-tools"
