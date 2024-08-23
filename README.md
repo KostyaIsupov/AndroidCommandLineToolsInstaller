@@ -1,5 +1,6 @@
 # AndroidCommandLineToolsInstaller
 Installer of Android Cmdline Tools (adb, fastboot, etc.)
+Keywords (ONLY FOR SEARCHING): adb, install, android sdk, android cmdline tools
 
 ## Using this program
 1. Install this program.<br>
