@@ -1,13 +1,5 @@
 @echo off
-
-:: Elevating (getting admin permissions)
-ver |>NUL find /v "5." && if "%~1"=="" (
-  Echo CreateObject^("Shell.Application"^).ShellExecute WScript.Arguments^(0^),"1","","runas",1 >"%~dp0Elevating.vbs"
-  cscript.exe //nologo "%~dp0Elevating.vbs" "%~f0"& goto :eof
-)
-
-:: In command prompt run "call set:it\to\path\to\this\file :skipadmintest" to skip elevating process
-:skipadmintest
+:: VERSION WITHOUT PAUSES AND ADMIN CHECKS, PLEASE EXECUTE WITH ADMIN PERMISSIONS
 
 :: Used to go to C:\ folder (so archive unzips here)
 cd C:\Windows
@@ -18,14 +10,11 @@ echo Android Cmdline Tools Installer
 echo -------------------------------
 echo.
 
-pause
-
 :: Checks if it alerady installed, if it is just a folder then its deleted and the installation starts
 if exist "C:\platform-tools" (
-echo Alerady installed. If not, press any key.
-pause > nul
+echo Alerady installed. Doing a reinstall.
 taskkill /f /im adb.exe
-rmdir /s C:\platform-tools
+rmdir /s /q C:\platform-tools
 )
 
 :: Downloading Android Cmdline Tools from original site (https://dl.google.com/android/repository/platform-tools-latest-windows.zip) and saving it in C:\Temp\
@@ -44,4 +33,3 @@ echo Android Cmdline tools are ready to use!
 echo They are located at C:\platform-tools.
 echo You can add them to path! Search "enviroment" in Start menu and add C:\platform-tools.
 echo Just launch Command Prompt and type any command, like "adb -d reboot"!
-pause > nul
