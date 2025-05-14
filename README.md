@@ -3,7 +3,7 @@ Installer of Android Cmdline Tools (adb, fastboot, etc.)
 Keywords (ONLY FOR SEARCHING): adb, install, android sdk, android cmdline tools
 
 ## Using this program
-1. Install this program.<br>
+1. Install <a href="https://raw.githubusercontent.com/KostyaIsupov/AndroidCommandLineToolsInstaller/refs/heads/main/installAndroidCmdlineTools.bat" download>this program</a>.<br>
 <img src="https://github.com/KostyaIsupov/AndroidCommandLineToolsInstaller/blob/main/Photos/image1.png?raw=true">
 <img src="https://github.com/KostyaIsupov/AndroidCommandLineToolsInstaller/blob/main/Photos/image2.png?raw=true">
 2. Open this program.<br>
